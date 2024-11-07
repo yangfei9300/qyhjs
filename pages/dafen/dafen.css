@@ -1,0 +1,90 @@
+page{
+	background-image: url(/static/111.jpg);
+	background-size: 100% 100%;
+}
+.viewbig{
+	width: 750rpx;
+	height: 100vh;
+	font-size: 70rpx;
+}
+.viewcenter{
+	width: 80%;
+	background-color: white;
+	padding:50rpx;
+}
+
+.cenbterbg{
+	
+	background-image: url(/static/centerlogin.jpg);
+	background-size: 100% 100%;  
+}
+.inputview{
+	border:1px solid #c9c9c9;
+	width: 650rpx;  
+	padding:25rpx 25rpx;
+	border-radius: 15rpx;
+}
+.btns{
+	/* background-color:     #E17535; */
+	background-color:#E7942E;
+	color: white;
+	height: 100rpx;
+	width: 650rpx;
+	border-radius: 15rpx;
+	text-align: center;
+	line-height: 100rpx;
+}
+.textawa{
+	border:1px solid #c9c9c9;
+	padding:25rpx 40rpx;
+	border-radius: 15rpx;
+	font-size: 60rpx;
+}
+.btns1{
+	/* background-color:     #E17535; */
+	/* background-color:#E7942E; */
+	color: white;
+	/* height: 70rpx; */
+	/* width: 250rpx; */
+	border-radius: 15rpx;
+	text-align: center;
+	line-height: 140rpx;
+	color: #E7942E;
+	width: 80%;
+	font-weight: bold;
+	height: 140rpx;
+}
+.type1{
+	font-size: 40rpx;
+	height: 90rpx;
+	border:5rpx solid #E7942E;
+	width: 400rpx;
+	text-align: center;
+	line-height: 90rpx;
+	font-weight: bold;
+	color: #E7942E;
+	border-radius: 15rpx;
+	box-shadow: #E7942E 0px 0px 8rpx 5rpx;
+}
+
+
+
+.textawa{
+	border:1px solid #c9c9c9;
+	border-radius: 15rpx;
+	width: 30vw;
+	height: 110rpx;
+	padding:0rpx 20rpx;
+}
+
+.btns1{
+	background-color:#E7942E;
+	color: white;
+	border-radius: 15rpx;
+	text-align: center;
+	line-height: 90rpx;  
+	color: #ffffff;
+	font-weight: bold;
+	line-height: 140rpx;
+	height: 140rpx;
+}

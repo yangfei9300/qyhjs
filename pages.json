@@ -1,0 +1,82 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "群英会",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "qyhjuesai/xuanqu/xuanqu",
+			"style": {
+				"navigationBarTitleText": "选区",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "qyhjuesai/dafen/dafen",
+			"style": {
+				"navigationBarTitleText": "打分",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "qyhjuesai/selfangxiang/selfangxiang",
+			"style": {
+				"navigationBarTitleText": "选择方向",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "qyhjuesai/xycz/xycz",
+			"style": {
+				"navigationBarTitleText": "胸有成竹",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path" : "pages/xuanqu/xuanqu",
+			"style" : 
+			{
+				"navigationBarTitleText" : "选区",
+				"navigationStyle": "custom"
+			}
+		},
+		
+		{
+			"path" : "pages/dafen/dafen",
+			"style" : 
+			{
+				"navigationBarTitleText" : "打分",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path" : "pages/xych/xych",
+			"style" : 
+			{
+				"navigationBarTitleText" : "胸有成竹",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path" : "pages/selfangxiang/selfangxiang",
+			"style" : 
+			{
+				"navigationBarTitleText" : "选择方向",
+				"navigationStyle": "custom"
+			}
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8",
+
+		"pageOrientation": "auto"
+
+	},
+	"uniIdRouter": {}
+}
