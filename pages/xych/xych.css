@@ -17,10 +17,11 @@ page{
 	border:1px solid #c9c9c9;
 	border-radius: 15rpx;
 	width: 70vw;
-	height: 150rpx;
+	height: 20rpx;
 	padding:0rpx 20rpx;
-	font-size: 70rpx;
-	line-height: 150rpx;
+	font-size: 20rpx;
+	line-height: 20rpx;
+	
 }
 
 .btns1{
@@ -31,21 +32,12 @@ page{
 	/* width: 250rpx; */
 	border-radius: 15rpx;
 	text-align: center;
-	line-height: 160rpx;  
-	font-size: 50rpx;
+	line-height: 30rpx;  
+	font-size:15rpx;
 	color: #ffffff;
 	font-weight: bold;
-	width: 75vw;
-	line-height: 160rpx;
+	width: 70vw;
+	line-height: 30rpx;
 }
 
 
-.btns12{
-	background-color:#E7942E;
-	color: white;
-	border-radius: 15rpx;
-	text-align: center;
-	line-height: 90rpx;  
-	color: #ffffff;
-	font-weight: bold;
-}

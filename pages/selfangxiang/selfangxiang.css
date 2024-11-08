@@ -54,16 +54,15 @@ page{
 	font-weight: bold;
 }
 .type1{
-	font-size: 60rpx;
-	height: 150rpx;
-	border:5rpx solid #E7942E;
-	width: 40%;
+	border:1rpx solid #E7942E;
+	width: 30vw;
 	text-align: center;
-	line-height: 150rpx;
+	line-height: 40rpx;
 	font-weight: bold;
 	color: #E7942E;
 	border-radius: 15rpx;
-	box-shadow: #E7942E 0px 0px 8rpx 5rpx;
-	margin-bottom: 110rpx;
-	padding: 0rpx 30rpx;
+	box-shadow: #E7942E 0px 0px 1rpx 1rpx;
+	margin-bottom: 20rpx;
+	padding: 0rpx 20rpx;
+	font-size: 10rpx;
 }

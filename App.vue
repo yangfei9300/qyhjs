@@ -4,9 +4,6 @@
 		},
 		onLaunch: function() {
 			uni.setStorageSync("meetingId",1);
-			
-			
-			
 		},
 		onShow: function() {
 			console.log('App Show');
@@ -27,7 +24,7 @@
 	}
 	.inputPlassStyle {
 		font-size: 40rpx;
-	}
+	} 
 	.inputTypeTitle {
 		font-size: 40rpx;
 	}

@@ -1,86 +1,83 @@
 <template>
 	<view>
 		<view class="viewbig colonn center_center">
-
-			<view class="background1 colonn center_center" style="width: 80vw;">
+			<view class="background1 colonn center_center" style="width: 80vw;border-radius: 20rpx;">
 				<scroll-view scroll-y style="height:70vh;">
-					<view class="h-50"></view>
-					<view class="viewcenter huanhang rowsb">
+					<view class="h-10"></view>
+					<view class="viewcenter colonn ">
 						<view class="colonn">
 							<view class="colonn ">
-								<view class="fs-60 ">1.根据影像学资料给出正确的病例诊断结果（25分）</view>
-								<view class="h-40"></view>
+								<view class="fs-15 ">1.根据影像学资料给出正确的病例诊断结果（25分）</view>
+								<view class="h-10"></view>
 								<input type="number" 
-								class="textawa fs-50"
-								 placeholder-class="fs-50"
-								 v-model="fens.fen1"
-									@input="isFenSubChange($event,0)" placeholder="最高25分"></input>
-								<view class="h-40"></view>
+								class="textawa fs-15" placeholder-class="fs-15" 
+								v-model="fens.fen1"
+									@input="isFenSubChange($event,0)" 
+									placeholder="最高25分"></input>
+								<view class="h-10"></view>
 							</view>
-							<view style="color: red;" v-if="!heTishi[0]" class="fs-50">第1项得分必须小于等于25</view>
+							<view style="color: red;" v-if="!heTishi[0]" class="fs-15">第1项得分必须小于等于25</view>
 							<view class="h-20"></view>
 						</view>
 
 						<view class="colonn">
 							<view class="colonn ">
-								<view class="fs-60 ">2.诊断思路阐述逻辑清晰有条理，表述完整精炼，重点突出(30分)</view>
-								<view class="h-40"></view>
-								<input type="number"
-								class="textawa fs-50"
-								 placeholder-class="fs-50" v-model="fens.fen2"
+								<view class="fs-15 ">2.诊断思路阐述逻辑清晰有条理，表述完整精炼，重点突出(30分)</view>
+								<view class="h-10"></view>
+								<input type="number" class="textawa fs-15" placeholder-class="fs-15" v-model="fens.fen2"
 									@input="isFenSubChange($event,1)" placeholder="最高30分"></input>
-								<view class="h-40"></view>
+								<view class="h-10"></view>
 							</view>
-							<view style="color: red;" v-if="!heTishi[1]" class="fs-50">第2项得分必须小于等于30</view>
+							<view style="color: red;" v-if="!heTishi[1]" class="fs-15">第2项得分必须小于等于30</view>
 							<view class="h-20"></view>
 						</view>
 
 						<view class="colonn">
 							<view class="colonn ">
-								<view class="fs-60 ">3.含有针对性的鉴别诊断，鉴别诊断结合病人具体病情、影像征象及发病率(25分)</view>
-								<view class="h-40"></view>
-								<input type="number" class="textawa fs-50"
-								 placeholder-class="fs-50" v-model="fens.fen3"
+								<view class="fs-15 ">3.含有针对性的鉴别诊断，鉴别诊断结合病人具体病情、影像征象及发病率(25分)</view>
+								<view class="h-10"></view>
+								<input type="number" class="textawa fs-15" placeholder-class="fs-15" v-model="fens.fen3"
 									@input="isFenSubChange($event,2)" placeholder="最高25分"></input>
-								<view class="h-40"></view>
+								<view class="h-10"></view>
 							</view>
-							<view style="color: red;" v-if="!heTishi[2]" class="fs-50">第3项得分必须小于等于25</view>
-							<view class="h-20"></view>
+							<view style="color: red;" v-if="!heTishi[2]" class="fs-15">第3项得分必须小于等于25</view>
+							<view class="h-10"></view>
 						</view>
 
 						<view class="colonn">
 							<view class="colonn ">
-								<view class="fs-60 ">4.能够提出有利于诊断和鉴别诊断的合理建议(15分)</view>
-								<view class="h-40"></view>
-								<input type="number" class="textawa fs-50"
-								 placeholder-class="fs-50" v-model="fens.fen4"
+								<view class="fs-15 ">4.能够提出有利于诊断和鉴别诊断的合理建议(15分)</view>
+								<view <view class="h-10"></view>
+								<input type="number" 
+								class="textawa fs-15"
+								 placeholder-class="fs-15" v-model="fens.fen4"
 									@input="isFenSubChange($event,3)" placeholder="最高15分"></input>
-								<view class="h-40"></view>
+								<view class="h-10"></view>
 							</view>
-							<view style="color: red;" v-if="!heTishi[3]" class="fs-50">第4项得分必须小于等于15</view>
-							<view class="h-20"></view>
+							<view style="color: red;" v-if="!heTishi[3]" class="fs-15">第4项得分必须小于等于15</view>
+							<view class="h-10"></view>
 						</view>
 
 						<view class="colonn">
 							<view class="colonn ">
-								<view class="fs-60 ">5.语言表达清晰完整，声音洪亮，语速和节奏适中，PPT制作规范，排版美观(5分)</view>
-								<view class="h-40"></view>
-								<input type="number" class="textawa fs-50"
-								 placeholder-class="fs-50" v-model="fens.fen5"
+								<view class="fs-15 ">5.语言表达清晰完整，声音洪亮，语速和节奏适中，PPT制作规范，排版美观(5分)</view>
+								<view <view class="h-10"></view>
+								<input type="number" class="textawa fs-15" placeholder-class="fs-15" v-model="fens.fen5"
 									@input="isFenSubChange($event,4)" placeholder="最高5分"></input>
-								<view class="h-40"></view>
+								<view class="h-10"></view>
 							</view>
-							<view style="color: red;"  v-if="!heTishi[4]" class="fs-50">第5项得分必须小于等于5</view>
-							<view class="h-20"></view>
+							<view style="color: red;" v-if="!heTishi[4]" class="fs-15">第5项得分必须小于等于5</view>
+							<view class="h-10"></view>
+						</view>
+						
+						<view class="colonn ">
+							<view class="btns1" @click.stop="toSubmit">提交</view>
 						</view>
 					</view>
-					<view class="roww center_center">
-						<view class="btns1" @click.stop="toSubmit">提交</view>
-					</view>
+					
 					<view class="h-100"></view>
 				</scroll-view>
 			</view>
-
 		</view>
 	</view>
 </template>
@@ -97,11 +94,11 @@
 				nowTime: 0,
 				miaoshu: 30, //倒计时
 				tiIndex: 1,
-				
+
 				numberInput: '',
 				formattedNumber: '',
 				duiyuans: ['江女士1', '江女士2', '江女士3'],
-				
+
 				fens: {
 					'fen1': '',
 					'fen2': '',
@@ -120,7 +117,7 @@
 					'uuid': ''
 				},
 				fenBz: [25, 30, 25, 15, 5],
-				
+
 				heTishi: [true, true, true, true, true],
 			}
 		},
@@ -133,16 +130,16 @@
 			const bili = 750 / screenWidth;
 			const screenHeightPx = bili * screenHeight;
 			this.screenHeightPx = screenHeightPx;
-		
+
 			// var userInfoDafen = uni.getStorageSync("dafenUser");
 			// if (userInfoDafen.is_score == 1) {
 			// 	this.getLishidafen();
 			// }
-		
+
 		},
 		methods: {
-		
-		
+
+
 			// 获取历史打分
 			getLishidafen() {
 				var data = {
@@ -153,16 +150,16 @@
 					.axios('POST', this.$paths.Api20241023dtLogInfo, data)
 					.then(res => {
 						if (res.code == 1) {
-		
-		
+
+
 							this.fens.fen1 = parseInt(res.data.score_arr[0]);
 							this.fens.fen2 = parseInt(res.data.score_arr[1]);
 							this.fens.fen3 = parseInt(res.data.score_arr[2]);
 							this.fens.fen4 = parseInt(res.data.score_arr[3]);
 							this.fens.fen5 = parseInt(res.data.score_arr[4]);
-		
-		
-		
+
+
+
 						} else {
 							this.$tools.showToast(res.info)
 						}
@@ -171,9 +168,9 @@
 						console.log('错误回调', err);
 					});
 			},
-		
+
 			heTishiSUb() {
-		
+
 				if (this.fens.fen1 != "") {
 					if (this.fens.fen1 < 25) {
 						this.heTishi[0] = false;
@@ -181,7 +178,7 @@
 						this.heTishi[0] = true;
 					}
 				}
-		
+
 				this.$forceUpdate()
 			},
 			// 这分是否可以提交
@@ -195,7 +192,7 @@
 				} else {
 					this.heTishi[index] = true;
 				}
-		
+
 				// this.heTishiSUb();
 			},
 			// 提交
@@ -218,12 +215,12 @@
 					'dt_id': uni.getStorageSync("Fx"),
 					'uuid': uni.getStorageSync("userId")
 				}
-				console.log("===",JSON.stringify(form))
+				console.log("===", JSON.stringify(form))
 				this.$axios
-					.axios('POST', 
-					this.$paths.markPut2, form)
+					.axios('POST',
+						this.$paths.markPut2, form)
 					.then(res => {
-						console.log("--",res)
+						console.log("--", res)
 						if (res.code == 1) {
 							console.log("阿斯顿", res);
 							this.$tools.showToast("提交成功");
@@ -239,13 +236,13 @@
 					.catch(err => {
 						console.log('错误回调', err);
 					});
-		
+
 			},
 			isSubmit() {
-		
-		
-		
-		
+
+
+
+
 				if (this.fens.fen1 == "" || this.fens.fen2 == "" || this.fens.fen3 == "" ||
 					this.fens.fen4 == "" || this.fens.fen5 == ""
 				) {
@@ -264,8 +261,8 @@
 				}
 				return true;
 			},
-		
-		
+
+
 			checkPrice(e) {
 				var value = e.detail.value;
 				this.$nextTick(() => {
@@ -273,7 +270,7 @@
 					this.numberInput = value
 				})
 			},
-		
+
 			// 下一题点击事件
 			nextQuestion() {
 				if (this.tiIndex == 10) {
@@ -288,7 +285,7 @@
 				} else if (this.tiIndex < 10) {
 					this.tiIndex = this.tiIndex + 1;
 				}
-		
+
 			},
 			// 图片加载完成
 			imgload(res, index) {

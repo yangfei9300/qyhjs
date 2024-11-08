@@ -6,11 +6,11 @@
 				<scroll-view scroll-y style="height:70vh;">
 					<view style="height: 5vh;"></view>
 					<view class="roww center_center">
-						<view class="fs-70">选择方向</view>
+						<view class="fs-20">选择方向</view>
 					</view>
 					<view style="height: 5vh;"></view>
 					<view class="huanhang rowsa">
-						<view class="type1 roww m-bottom-50" @click.stop="toRead(item.dt_id)"
+						<view class="type1 roww center_center " @click.stop="toRead(item.dt_id)"
 							v-for="(item,index) in fangxiang">
 							<view class="w-20"></view>
 							<view>{{item.title}}</view>
@@ -19,7 +19,7 @@
 							<view class="w-20"></view>
 						</view>
 					</view>
-					<view style="height: 10vh;"></view>
+					<view style="height: 20rpx;"></view>
 				</scroll-view>
 			</view>
 

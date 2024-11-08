@@ -1,20 +1,22 @@
 <template>
 	<view>
-		<view class="colonn center_center" style="height: 100vh;">
+		<view class="colonn center_center" 
+		style="height: 100vh;">
 			<view class="colonn w-750 cenbterbg  center_center"
 			>
 				<view class="colonn">
 					<view class="roww inputview center_center">
-						<view class="w-30"></view>
-						<view class="fs-60">姓名</view>
+						<view class="w-0"></view>
+						<view class="fs-20">姓名</view>
 						<view class="w-20"></view>
 						<input v-model="username" 
-						placeholder-class="fs-60"
-						 class="fs-60 allline"
+						placeholder-class="fs-20"
+						 class="fs-20 allline"
 						 placeholder="请输入姓名" />
 					</view>
-					<view class="h-110"></view>
-					<view class="btns" @click.stop="toLoginApi">登录</view>
+					<view class="h-20"></view>
+					<view class="btns" 
+					@click.stop="toLoginApi">登录</view>
 				</view>
 			</view>
 		</view>
