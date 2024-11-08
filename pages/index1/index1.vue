@@ -2,7 +2,9 @@
 	<view>
 		<view class="colonn center_center"
 			style="width: 100vw;height:100vh;background-image: url(../../static/index1.png);background-size: 100% 100%;">
-			<view class="btns1" @click.stop="tpindex">立即开始</view>
+			<view style="width: 100vw;" class="roww center_center">
+				<view class="btns1" @click.stop="tpindex">立即开始</view>
+			</view>
 		</view>
 		<!-- <view class="colonn">
 			<view class="" v-for="(item,index) in list">
@@ -51,7 +53,7 @@
 		},
 		methods: {
 			tpindex() {
-				uni.reLaunch({
+				uni.navigateTo({
 					url: "/pages/index/index"
 				})
 			},
@@ -66,17 +68,17 @@
 	
 	
 	.btns1{
-		/* background-color:     #E17535; */
 		background-color:#E7942E;
 		color: white;
-		height: 30rpx;
-		width:200rpx;
+		height: 90rpx;
+		width:500rpx;
 		border-radius: 15rpx;
 		text-align: center;
-		font-size: 20rpx;
-		line-height: 30rpx;
-		position: relative;
-		bottom: -20rpx;
+		font-size: 40rpx;
+		line-height: 90rpx;
+		position: fixed;
+		bottom: 300rpx;
+		box-shadow: #E7942E 10rpx 10rpx 10rpx 10rpx;
 	}
 	
 	

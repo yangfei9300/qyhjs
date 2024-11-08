@@ -6,6 +6,7 @@ page{
 	width: 100vw;
 	height: 100vh;
 	font-size: 70rpx;
+	position: fixed;
 }
 .viewcenter{
 	width: 80%;
@@ -54,8 +55,9 @@ page{
 	border:1px solid #c9c9c9;
 	border-radius: 15rpx;
 	width: 30vw;
-	height: 50rpx;
+	height: 90rpx;
 	padding:0rpx 20rpx;
+	font-size: 40rpx;
 }
 
 .btns1{
@@ -65,8 +67,8 @@ page{
 	text-align: center;
 	color: #ffffff;
 	font-weight: bold;
-	line-height: 50rpx;
-	height: 50rpx;
-	font-size: 20rpx;
-	width: 300rpx;
+	line-height: 90rpx;
+	height: 90rpx;
+	font-size: 40rpx;
+	width: 40vw;
 }

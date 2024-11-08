@@ -13,17 +13,16 @@ page{
 	border-radius: 15rpx;
 }
 .type1{
-	font-size: 40rpx;
-	height: 50rpx;
+	height: 90rpx;
 	border:5rpx solid #E7942E;
 	width: 40%;
 	text-align: center;
-	line-height: 50rpx;
+	line-height: 90rpx;
 	font-weight: bold;
-	color: #E7942E;
+	color: #E7942E;  
 	border-radius: 15rpx;
 	box-shadow: #E7942E 0px 0px 3rpx 2rpx;
-	margin-bottom: 20rpx;
-	margin-top: 20rpx;
-	font-size: 20rpx;
+	margin-bottom: 60rpx;
+	margin-top: 30rpx;
+	font-size: 40rpx;
 }

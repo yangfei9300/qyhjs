@@ -15,8 +15,7 @@ page{
 
 
 .cenbterbg{
-	
-	background-image: url(/static/centerlogin.jpg);
+	/* background-image: url(/static/centerlogin.jpg); */
 	background-size: 100% 100%;  
 }
 .inputview{
@@ -54,15 +53,16 @@ page{
 	font-weight: bold;
 }
 .type1{
-	border:1rpx solid #E7942E;
-	width: 30vw;
+	height: 90rpx;
+	border:5rpx solid #E7942E;
+	width: 40%;
 	text-align: center;
-	line-height: 40rpx;
+	line-height: 90rpx;
 	font-weight: bold;
-	color: #E7942E;
+	color: #E7942E;  
 	border-radius: 15rpx;
-	box-shadow: #E7942E 0px 0px 1rpx 1rpx;
-	margin-bottom: 20rpx;
-	padding: 0rpx 20rpx;
-	font-size: 10rpx;
+	box-shadow: #E7942E 0px 0px 3rpx 2rpx;
+	margin-bottom: 60rpx;
+	margin-top: 30rpx;
+	font-size: 40rpx;
 }

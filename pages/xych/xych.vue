@@ -1,80 +1,76 @@
 <template>
 	<view>
 		<view class="viewbig colonn center_center">
-			<view class="background1 colonn center_center" style="width: 80vw;border-radius: 20rpx;">
-				<scroll-view scroll-y style="height:70vh;">
+			<view class="background1 colonn center_center"
+				style="width: 80vw;border-radius: 20rpx;height:70vh;position: fixed;top: 15vh;left: 10vw;">
+				<scroll-view scroll-y style="height:70vh;width: 80vw;">
 					<view class="h-10"></view>
 					<view class="viewcenter colonn ">
 						<view class="colonn">
 							<view class="colonn ">
-								<view class="fs-15 ">1.根据影像学资料给出正确的病例诊断结果（25分）</view>
-								<view class="h-10"></view>
-								<input type="number" 
-								class="textawa fs-15" placeholder-class="fs-15" 
-								v-model="fens.fen1"
-									@input="isFenSubChange($event,0)" 
-									placeholder="最高25分"></input>
-								<view class="h-10"></view>
+								<view class="fs-40 ">1.根据影像学资料给出正确的病例诊断结果（25分）</view>
+								<view class="h-20"></view>
+								<input type="number" class="textawa fs-40" placeholder-class="fs-40" v-model="fens.fen1"
+									@input="isFenSubChange($event,0)" placeholder="最高25分"></input>
+								<view class="h-30"></view>
 							</view>
-							<view style="color: red;" v-if="!heTishi[0]" class="fs-15">第1项得分必须小于等于25</view>
-							<view class="h-20"></view>
+							<view style="color: red;" v-if="!heTishi[0]" class="fs-40">第1项得分必须小于等于25</view>
+							<view class="h-40"></view>
 						</view>
 
 						<view class="colonn">
 							<view class="colonn ">
-								<view class="fs-15 ">2.诊断思路阐述逻辑清晰有条理，表述完整精炼，重点突出(30分)</view>
-								<view class="h-10"></view>
-								<input type="number" class="textawa fs-15" placeholder-class="fs-15" v-model="fens.fen2"
+								<view class="fs-40 ">2.诊断思路阐述逻辑清晰有条理，表述完整精炼，重点突出(30分)</view>
+								<view class="h-20"></view>
+								<input type="number" class="textawa fs-40" placeholder-class="fs-40" v-model="fens.fen2"
 									@input="isFenSubChange($event,1)" placeholder="最高30分"></input>
-								<view class="h-10"></view>
+								<view class="h-20"></view>
 							</view>
-							<view style="color: red;" v-if="!heTishi[1]" class="fs-15">第2项得分必须小于等于30</view>
-							<view class="h-20"></view>
+							<view style="color: red;" v-if="!heTishi[1]" class="fs-40">第2项得分必须小于等于30</view>
+							<view class="h-40"></view>
 						</view>
 
 						<view class="colonn">
 							<view class="colonn ">
-								<view class="fs-15 ">3.含有针对性的鉴别诊断，鉴别诊断结合病人具体病情、影像征象及发病率(25分)</view>
-								<view class="h-10"></view>
-								<input type="number" class="textawa fs-15" placeholder-class="fs-15" v-model="fens.fen3"
+								<view class="fs-40 ">3.含有针对性的鉴别诊断，鉴别诊断结合病人具体病情、影像征象及发病率(25分)</view>
+								<view class="h-20"></view>
+								<input type="number" class="textawa fs-40" placeholder-class="fs-40" v-model="fens.fen3"
 									@input="isFenSubChange($event,2)" placeholder="最高25分"></input>
-								<view class="h-10"></view>
+								<view class="h-20"></view>
 							</view>
 							<view style="color: red;" v-if="!heTishi[2]" class="fs-15">第3项得分必须小于等于25</view>
-							<view class="h-10"></view>
+							<view class="h-20"></view>
 						</view>
 
 						<view class="colonn">
 							<view class="colonn ">
-								<view class="fs-15 ">4.能够提出有利于诊断和鉴别诊断的合理建议(15分)</view>
-								<view <view class="h-10"></view>
-								<input type="number" 
-								class="textawa fs-15"
-								 placeholder-class="fs-15" v-model="fens.fen4"
+								<view class="fs-40 ">4.能够提出有利于诊断和鉴别诊断的合理建议(15分)</view>
+								<view <view class="h-20"></view>
+								<input type="number" class="textawa fs-40" placeholder-class="fs-40" v-model="fens.fen4"
 									@input="isFenSubChange($event,3)" placeholder="最高15分"></input>
-								<view class="h-10"></view>
+								<view class="h-20"></view>
 							</view>
 							<view style="color: red;" v-if="!heTishi[3]" class="fs-15">第4项得分必须小于等于15</view>
-							<view class="h-10"></view>
+							<view class="h-20"></view>
 						</view>
 
 						<view class="colonn">
 							<view class="colonn ">
-								<view class="fs-15 ">5.语言表达清晰完整，声音洪亮，语速和节奏适中，PPT制作规范，排版美观(5分)</view>
-								<view <view class="h-10"></view>
-								<input type="number" class="textawa fs-15" placeholder-class="fs-15" v-model="fens.fen5"
+								<view class="fs-40 ">5.语言表达清晰完整，声音洪亮，语速和节奏适中，PPT制作规范，排版美观(5分)</view>
+								<view <view class="h-20"></view>
+								<input type="number" class="textawa fs-40" placeholder-class="fs-40" v-model="fens.fen5"
 									@input="isFenSubChange($event,4)" placeholder="最高5分"></input>
-								<view class="h-10"></view>
+								<view class="h-20"></view>
 							</view>
-							<view style="color: red;" v-if="!heTishi[4]" class="fs-15">第5项得分必须小于等于5</view>
-							<view class="h-10"></view>
+							<view style="color: red;" v-if="!heTishi[4]" class="fs-40">第5项得分必须小于等于5</view>
+							<view class="h-20"></view>
 						</view>
-						
+
 						<view class="colonn ">
 							<view class="btns1" @click.stop="toSubmit">提交</view>
 						</view>
 					</view>
-					
+
 					<view class="h-100"></view>
 				</scroll-view>
 			</view>

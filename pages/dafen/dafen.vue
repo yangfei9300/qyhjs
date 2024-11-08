@@ -1,97 +1,66 @@
 <template>
 	<view>
 		<view class=" viewbig colonn center_center">
-			<view class="colonn">  
-				<view class="h-50"></view>
-				<view class="roww center_center fs-20 fw-600">
+			<view class="colonn"
+			style="position: fixed;top: 35vh;width: 100vw;"
+			>  
+				<view class="h-80"></view>
+				<view class="roww center_center fs-60 fw-600">
 					<view>请打分</view>
 				</view>
+				<view class="h-50"></view>
 				<view class="roww rowsa"  
 				style="100vw">
 					<view class="roww m-left-50   allline center_center">
 						<view class="w-30"></view>
-						<view class="fs-20" 
+						<view class="fs-40" 
 						style="padding:20rpx 0rpx;">1.第一题</view>
 						<view class="w-10"></view>
 						<input v-model="fens[0]" class="textawa " 
 						placeholder="请输入" 
-						placeholder-class="fs-20"
+						placeholder-class="fs-40"
 						/>
 						<view class="w-100"></view>
 					</view>
 					<view class="roww   allline center_center">
 						<view class="w-30"></view>
-						<view class="fs-20" 
-						style="padding:20rpx 0rpx;">2.第一题</view>
+						<view class="fs-40" 
+						style="padding:20rpx 0rpx;">2.第二题</view>
 						<view class="w-10"></view>
 						<input v-model="fens[1]" class="textawa " 
 						placeholder="请输入" 
-						placeholder-class="fs-20"
+						placeholder-class="fs-40"
 						/>
 						<view class="w-100"></view>
 					</view>
-					<!-- <view class="roww allline center_center">
-						<view class="w-100"></view>
-						<view  class="fs-60" style="padding:20rpx 0rpx;">2.第二题</view>
-						<view class="w-30"></view>
-						<input v-model="fens[1]" class="textawa " placeholder="请输入"
-						placeholder-class="fs-60" />
-						<view class="w-100"></view>
-					</view> -->
 				</view>
 				<view class="h-30"></view>
 				<view class="roww rowsa "
 				style="100vw">
 					<view class="roww m-left-50  allline center_center">
 						<view class="w-30"></view>
-						<view class="fs-20" 
-						style="padding:20rpx 0rpx;">3.第一题</view>
+						<view class="fs-40" 
+						style="padding:20rpx 0rpx;">3.第三题</view>
 						<view class="w-10"></view>
 						<input v-model="fens[2]" class="textawa " 
 						placeholder="请输入" 
-						placeholder-class="fs-20"
+						placeholder-class="fs-40"
 						/>
 						<view class="w-100"></view>
 					</view>
 					<view class="roww   allline center_center">
 						<view class="w-30"></view>
-						<view class="fs-20" 
-						style="padding:20rpx 0rpx;">4.第一题</view>
+						<view class="fs-40" 
+						style="padding:20rpx 0rpx;">4.第四题</view>
 						<view class="w-10"></view>
 						<input v-model="fens[3]" class="textawa " 
 						placeholder="请输入" 
-						placeholder-class="fs-20"
+						placeholder-class="fs-40"
 						/>
 						<view class="w-100"></view>
 					</view>
-					<!-- <view class="roww allline center_center">
-						<view class="w-100"></view>
-						<view  class="fs-60" style="padding:20rpx 0rpx;">2.第二题</view>
-						<view class="w-30"></view>
-						<input v-model="fens[1]" class="textawa " placeholder="请输入"
-						placeholder-class="fs-60" />
-						<view class="w-100"></view>
-					</view> -->
 				</view>
-				<!-- <view class="huanhang rowsa">
-					<view class="roww allline center_center">
-						<view class="w-100"></view>
-						<view class="fs-60"  style="padding:20rpx 0rpx;">3.第三题</view>
-						<view class="w-30"></view>
-						<input v-model="fens[2]" class="textawa" placeholder="请输入"
-						placeholder-class="fs-60" />
-						<view class="w-100"></view>
-					</view>
-					<view class="roww allline center_center">
-						<view class="w-100"></view>
-						<view class="fs-60"  style="padding:20rpx 0rpx;">4.第四题</view>
-						<view class="w-30"></view>
-						<input v-model="fens[3]" class="textawa" placeholder="请输入"
-						placeholder-class="fs-60" />
-						<view class="w-100"></view>
-					</view>
-				</view> -->
-				<view class="h-20"></view>
+				<view class="h-60"></view>
 				<view class="roww center_center">
 					<view class="btns1" 
 					@click.stop="toSuibmit">提交</view>

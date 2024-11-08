@@ -1,16 +1,16 @@
 <template>
 	<view>
 		<view class="viewbig colonn center_center">
-
 			<view class=" colonn center_center" style="width: 80vw;">
 				<scroll-view scroll-y style="height:70vh;">
 					<view style="height: 5vh;"></view>
 					<view class="roww center_center">
-						<view class="fs-20">选择方向</view>
+						<view class="fs-60 fw-700">选择方向</view>
 					</view>
 					<view style="height: 5vh;"></view>
 					<view class="huanhang rowsa">
-						<view class="type1 roww center_center " @click.stop="toRead(item.dt_id)"
+						<view class="type1 roww center_center " 
+						@click.stop="toRead(item.dt_id)"
 							v-for="(item,index) in fangxiang">
 							<view class="w-20"></view>
 							<view>{{item.title}}</view>
