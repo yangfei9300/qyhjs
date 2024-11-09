@@ -10,12 +10,14 @@
 					<view style="height: 5vh;"></view>
 					<view class="huanhang rowsa">
 						<view class="type1 roww center_center " 
-						@click.stop="toRead(item.dt_id)"
+						@click.stop="toRead(item.dt_id,item)"
 							v-for="(item,index) in fangxiang">
 							<view class="w-20"></view>
-							<view>{{item.title}}</view>
+							<view v-if="item.status==1" style="color: #999999;">{{item.title}}</view>
+							<view v-else>{{item.title}}</view>
 							<view class="allline"></view>
-							<view style="color: red;">去评分</view>
+							<view style="color: #999999;" v-if="item.status==1">已评分</view>
+							<view style="color: red;" v-if="item.status==0">去评分</view>
 							<view class="w-20"></view>
 						</view>
 					</view>
@@ -54,12 +56,17 @@
 			const screenHeightPx = bili * screenHeight;
 			this.screenHeightPx = screenHeightPx;
 			console.log(bili, screenWidth, screenHeight, screenHeightPx);
+			
+		},
+		onShow() {
 			this.getFangxaing();
 		},
 		methods: {
 			getFangxaing() {
 
-				var data = {}
+				var data = {
+					'uuid':uni.getStorageSync("userId")
+				}
 				this.$axios
 					.axios('POST', this.$paths.getXQuestion, data)
 					.then(res => {
@@ -73,7 +80,10 @@
 						console.log('错误回调', err);
 					});
 			},
-			toRead(dtid) {
+			toRead(dtid,item) {
+				if(item.status==1){
+					return false;
+				}
 				uni.setStorageSync("Fx", dtid);
 				uni.navigateTo({
 					url: "/pages/xych/xych"
